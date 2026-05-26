@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Maintenance System</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Stock Maintenance System</h1>
+
+    <div class="form-group">
+        <label>Product ID</label>
+        <input type="text" id="productId">
+    </div>
+
+    <div class="form-group">
+        <label>Product Name</label>
+        <input type="text" id="productName">
+    </div>
+
+    <div class="form-group">
+        <label>Quantity</label>
+        <input type="number" id="quantity">
+    </div>
+
+    <div class="form-group">
+        <label>Price</label>
+        <input type="number" id="price">
+    </div>
+
+    <button class="add-btn" onclick="addProduct()">Add Product</button>
+
+    <div class="search-box">
+        <input type="text" id="search" placeholder="Search Product..." onkeyup="searchProduct()">
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Product Name</th>
+                <th>Quantity</th>
+                <th>Price</th>
+                <th>Status</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+
+        <tbody id="productTable">
+
+        </tbody>
+    </table>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
